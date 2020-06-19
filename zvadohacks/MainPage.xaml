@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="zvadohacks.MainPage">
     <StackLayout>
-      <Button Clicked="Button_Clicked" Text="Introduction" x:Name="Button"></Button>
-      
+        <Button Clicked="Get_Button_Clicked" Text="Introduction" x:Name="BtnNavIntro"></Button>
+        <Button Clicked="Get_Installing_Kali" Text="Installing Kali" x:Name="BtnNavInstallingKai"></Button>
+        <Button Clicked="Get_Zvado_Tools" Text="Using Zvado Tools" x:Name="BtnUsingZvadoTools"></Button>      
     </StackLayout>
 </ContentPage>

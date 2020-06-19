@@ -8,9 +8,7 @@ using Xamarin.Forms;
 using zvadohacks.Pages;
 
 namespace zvadohacks
-{
-    // Learn more about making custom code visible in the Xamarin.Forms previewer
-    // by visiting https://aka.ms/xamarinforms-previewer
+{   
     [DesignTimeVisible(false)]
     public partial class MainPage : ContentPage
     {
@@ -19,9 +17,19 @@ namespace zvadohacks
             InitializeComponent();
         }
 
-        void Button_Clicked(System.Object sender, System.EventArgs e)
+        void Get_Button_Clicked(object sender, EventArgs e)
         {
             Navigation.PushAsync(new Introduction());
+        }
+
+        void Get_Installing_Kali(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new InstallingKali());
+        }
+
+        void Get_Zvado_Tools(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new UsingZvadoTools());
         }
     }
 }
