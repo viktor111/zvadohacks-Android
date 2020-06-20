@@ -7,7 +7,8 @@
                 <TableRoot>
                     <TableSection Title="Introduction">
                         <TextCell x:Name="CellInstallingKali" Tapped="Cell_1_Tapped" Text="Set up kali"></TextCell>
-                        <TextCell x:Name="CellUsingZvadoTool" Tapped="Cell_2_Tapped" Text="Using Zvado Hacking Tools"></TextCell>                       
+                        <TextCell x:Name="CellUsingZvadoTool" Tapped="Cell_2_Tapped" Text="Using Zvado Hacking Tools"></TextCell>
+                        <TextCell x:Name="CellBasicsWebWifi" Tapped="Cell_3_Tapped" Text="Bsics Of web/wifi"></TextCell>                       
                     </TableSection>
                 </TableRoot>
             </TableView>

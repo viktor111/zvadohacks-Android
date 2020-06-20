@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="zvadohacks.Pages.BasicsWebWifi">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label FontSize="Title">Basics of web/wifi</Label>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,9 +1,42 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="zvadohacks.Pages.UsingZvadoTools">
     <ContentPage.Content>
-        <StackLayout>
-            <Label FontSize="Title" Text="Using Zvado Tools" VerticalOptions="Center"></Label>
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <Label FontSize="Title" Text="Using Zvado Tools" VerticalOptions="Center"></Label>
+                <Label>Note: when typing commands type them without the []</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">What are zvado tools?</Label>
+                <Label>Im zvado, I have made tools which allow you to sniff wifi networks for passwords. WE are going to look at my tools and built in kali linux tools. My tools are more lightweight and can be used both in kali and other linux distros.</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">GIT</Label>
+                <Label>Before we cotinue make sure you have git installed by opneing the terminal and typing [git --version] if you dont type [sudo apt install git]</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">BH_konsol</Label>
+                <Label>BH_konsol combines most tool in one command line intefrace. To install type [git clone https://github.com/viktor111/BH_konsol.git ] then cd in the installed file and type [pip install -r REQUREMENTS.txt
+] if you dont have pip installed type [sudo apt install python-pip]
+                </Label>
+                <Label TextColor="Blue" BackgroundColor="Gold" FontSize="Title">Tools:</Label>
+                <Label>Dont worry if things dont kae sense after the web/wifi basics guide evrything will make sense.</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">mac-change</Label>
+                <Label>Change your mac address just with a simple command whenever you want.</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">net-scan</Label>
+                <Label>Scan all the devices on your wifi and diplay infromataion such as ip address mac address and manufacturer (make sure to include /24 at the end of the ip or you will not see all devices.)</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">net-spoof</Label>
+                <Label>Trick the router and the victim by sending ARP packet to both with the MAC address of each other and become man in the middle. (you must enable forwarding and if using wifi must have wifi chpset wich can be in monitor mode)</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">sniffer</Label>
+                <Label>Once you used net spoof to become man in the middle you can use sniffer tool to watch for incoming http requests (GET, POST, etc) and extract data like url username and password.</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">net-stop</Label>
+                <Label>net-stop creates a queue in wich incoming packets to the traget with the spoofer are held and dropped so the target never gets a response.</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">dns-spoof</Label>
+                <Label>Captures and modifes DNS response so you can redirect the target IP to a new host</Label>
+                <Label TextColor="Blue" BackgroundColor="Gold" FontSize="Title">Usage:</Label>
+                <Label>Usage is very simple.
+cd in the BH_konsol dir
+run the main.py (dont forget the sudo or some tools will not work)</Label>
+                <Label>To use a tool type this command [run [tool number here] [options here]]</Label>
+                <Label>To get help type [help]</Label>
+                <Label>To see all commands type [commands]</Label>
+                <Label>To get info on tool type [info [tool num]]</Label>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
     

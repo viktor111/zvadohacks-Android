@@ -37,5 +37,12 @@ namespace zvadohacks
             BtnUsingZvadoTools.Opacity = 0;
             await BtnUsingZvadoTools.FadeTo(1, 4000);
         }
+
+        async void Get_BasicsWebWifi(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new BasicsWebWifi());
+            BtnBasicsWebWifi.Opacity = 0;
+            await BtnBasicsWebWifi.FadeTo(1, 4000);
+        }
     }
 }

@@ -3,9 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="zvadohacks.Pages.InstallingKali">
     <ContentPage.Content>
-        <StackLayout>
-            <Label FontSize="Title" Text="Installing Kali" VerticalOptions="Center"></Label>
-            <Image Source="kali19.png"></Image>
-        </StackLayout>        
+        <ScrollView HeightRequest="3000">
+            <StackLayout>
+                <Label FontSize="Title" Text="Installing Kali" VerticalOptions="Center"></Label>
+                <Image Source="kali19.png"></Image>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">What is Kali Linux?</Label>
+                <Label>Kali Linux is an opertaing system made for ethical hacking it has many hacking tools. And it comes with pre set up envoirnment to run tools for hacking. We are going to take a look at the tools for sniffing wifi networks and stealing passwords on wifi networks. But first lets get to installing it. Keep in mind you can always use the same method without usb stick on virtual machine like vmware or virtualbox. It is the same process.</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">Step 1: Install kali</Label>
+                <Label>Download kali from this website https://www.kali.org/downloads/ save it on somewhere and move to setp 2</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">Step 2: Install etcher</Label>
+                <Label>Make sure you have your usb stick ready next download/install balena etcher from this website https://www.balena.io/etcher/. This is a tool that will let you birn the iso to the usb and make it bootable.</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">Step 3: Burn the usb</Label>
+                <Label>Burn the usb by selecting your usb and the image of kali llinux you downloaded. After it is finished restart your computer and enter boot menu by clicking f11 or f3 key deppending on your computer.</Label>
+                <Label TextColor="Wheat" BackgroundColor="BlueViolet" FontSize="Title">Step 4: Installation</Label>
+                <Image Source="s1.png"></Image>
+                <Label>Choose graphical installation.</Label>
+                <Image Source="s2.png"></Image>
+                <Label>Next couple of screens will ask you to select locale information such as your preferred language, your country location and, keyboard layout.</Label>
+                <Image Source="s3.png"></Image>
+                <Label>Once through the local information, the loader will automatically install some additional components and configure your network related settings. Then the installer will prompt for a hostname and domain for this installation. Provide appropriate information for the environment and continue installing.</Label>
+                <Image Source="s4.png"></Image>
+                <Label>Set a password for your Kali Linux machine and hit continue.</Label>
+                <Image Source="s5.png"></Image>
+                <Label>After the password is set, the installer will prompt you to set the time zone and then pauses at the disk partitioning. The installer will now provide you four choices about the partitions of the disk. The easiest option for you is to use ‘Guided – Use Entire Disk’. Experienced users can use the “Manual” partitioning method for more granular configuration options.</Label>
+                <Image Source="s6.png"></Image>
+                <Label>Select the partitioning disk (the recommended option is all files in one partition for new users) and then hit on continue.</Label>
+                <Image Source="s7.png"></Image>
+                <Label>Confirm all changes to be made to the disk on the host machine.</Label>
+                <Image Source="s8.png"></Image>
+                <Label>Once the necessary files are installed, system will ask you if you want to set up a network mirror to obtain future pieces of software and updates. Be sure to enable this functionality if you wish to use the Kali repositories.</Label>
+                <Image Source="s9.png"></Image>
+                <Label>Next you will be asked to install the GRUB boot loader. Select ‘Yes’ and pick the device to write the necessary boot loader information to the hard drive which is required to boot Kali.</Label>
+                <Image Source="s10.png"></Image>
+                <Label>Once the installer finishes installing GRUB to the disk, click on continue to finish the installation, it will install some final stage files.</Label>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

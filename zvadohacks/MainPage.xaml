@@ -3,6 +3,7 @@
     <StackLayout>
         <Button Clicked="Get_Button_Clicked" Text="Introduction" x:Name="BtnNavIntro"></Button>
         <Button Clicked="Get_Installing_Kali" Text="Installing Kali" x:Name="BtnNavInstallingKai"></Button>
-        <Button Clicked="Get_Zvado_Tools" Text="Using Zvado Tools" x:Name="BtnUsingZvadoTools"></Button>      
+        <Button Clicked="Get_Zvado_Tools" Text="Using Zvado Tools" x:Name="BtnUsingZvadoTools"></Button>
+        <Button Clicked="Get_BasicsWebWifi" Text="Basics of web/wifi" x:Name="BtnBasicsWebWifi"></Button> 
     </StackLayout>
 </ContentPage>

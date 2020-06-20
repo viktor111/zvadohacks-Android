@@ -20,5 +20,11 @@ namespace zvadohacks.Pages
             const string Detail = "You will learn how to install and use zvado hacking tools";
             CellUsingZvadoTool.Detail = Detail;
         }
+
+        void Cell_3_Tapped(object sender, EventArgs e)
+        {
+            const string Detail = "Learn about basic concept of web and wifi.";
+            CellBasicsWebWifi.Detail = Detail;
+        }
     }
 }   
