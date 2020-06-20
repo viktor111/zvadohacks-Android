@@ -17,19 +17,25 @@ namespace zvadohacks
             InitializeComponent();
         }
 
-        void Get_Button_Clicked(object sender, EventArgs e)
+        async void Get_Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Introduction());
+            await Navigation.PushAsync(new Introduction());
+            BtnNavIntro.Opacity = 0;
+            await BtnNavIntro.FadeTo(1, 4000);
         }
 
-        void Get_Installing_Kali(object sender, EventArgs e)
+        async void Get_Installing_Kali(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new InstallingKali());
+            await Navigation.PushAsync(new InstallingKali());
+            BtnNavInstallingKai.Opacity = 0;
+            await BtnNavInstallingKai.FadeTo(1, 4000);
         }
 
-        void Get_Zvado_Tools(object sender, EventArgs e)
-        {
-            Navigation.PushAsync(new UsingZvadoTools());
+        async void Get_Zvado_Tools(object sender, EventArgs e)
+        {            
+            await Navigation.PushAsync(new UsingZvadoTools());
+            BtnUsingZvadoTools.Opacity = 0;
+            await BtnUsingZvadoTools.FadeTo(1, 4000);
         }
     }
 }
