@@ -3,7 +3,14 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="What you will learn"></Label>
+            <TableView Intent="Data">
+                <TableRoot>
+                    <TableSection Title="Introduction">
+                        <TextCell x:Name="CellInstallingKali" Tapped="Cell_1_Tapped" Text="Set up kali"></TextCell>
+                        <TextCell x:Name="CellUsingZvadoTool" Tapped="Cell_2_Tapped" Text="Using Zvado Hacking Tools"></TextCell>                       
+                    </TableSection>
+                </TableRoot>
+            </TableView>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
